@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "generate:og": "bun run scripts/generate-og.ts",
+    "generate:favicons": "bun run scripts/generate-favicons.ts"
   },
   "dependencies": {
     "@ai-sdk/openai": "^2.0.88",
@@ -75,6 +77,8 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "postcss": "^8.5",
+    "puppeteer": "^24.33.0",
+    "sharp": "^0.34.5",
     "tailwindcss": "^4.1.9",
     "tw-animate-css": "1.3.3",
     "typescript": "^5"
