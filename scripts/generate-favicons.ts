@@ -2,7 +2,7 @@ import sharp from "sharp";
 import { join } from "path";
 
 const publicDir = join(process.cwd(), "public");
-const sourceImage = join(publicDir, "favicon-source.png");
+const sourceImage = join(process.cwd(), "app", "icon.png");
 
 async function generateFavicons() {
   // Generate different sizes
