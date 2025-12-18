@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint .",
     "generate:og": "bun run scripts/generate-og.ts",
-    "generate:favicons": "bun run scripts/generate-favicons.ts"
+    "generate:favicons": "bun run scripts/generate-favicons.ts",
+    "generate:icon": "bun run scripts/generate-icon.ts"
   },
   "dependencies": {
     "@ai-sdk/openai": "^2.0.88",
