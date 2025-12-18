@@ -33,7 +33,7 @@ async function generateOG() {
           body {
             width: ${OG_WIDTH}px;
             height: ${OG_HEIGHT}px;
-            background: #0C0C0C;
+            background: #0A0A0A;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -41,9 +41,9 @@ async function generateOG() {
           }
           .watermark {
             font-family: 'Hedvig Letters Sans', sans-serif;
-            font-size: 180px;
+            font-size: 240px;
             font-weight: 400;
-            color: #161616;
+            color: #E5E5E5;
             text-transform: lowercase;
             letter-spacing: -0.02em;
             user-select: none;
