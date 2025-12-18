@@ -1,5 +1,5 @@
 import type React from "react"
-import type { Metadata } from "next"
+import type { Metadata, Viewport } from "next"
 import { Analytics } from "@vercel/analytics/next"
 import { Hedvig_Letters_Sans, Hedvig_Letters_Serif } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
@@ -20,8 +20,12 @@ const hedvigSerif = Hedvig_Letters_Serif({
   variable: "--font-hedvig-serif",
 })
 
+const siteUrl = process.env.VERCEL_PROJECT_PRODUCTION_URL
+  ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+  : "http://localhost:3000"
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://learn.crafter.station"),
+  metadataBase: new URL(siteUrl),
   title: "Crafters by Crafter Station | Learn by Shipping",
   description:
     "A free, community-driven program to help people build real products with modern web and AI. Build skills. Ship projects. Create opportunity.",
@@ -29,11 +33,13 @@ export const metadata: Metadata = {
     title: "Crafters by Crafter Station",
     description: "Build something real. Ship it. Repeat.",
     type: "website",
+    images: ["/og.png"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Crafters by Crafter Station",
     description: "Build something real. Ship it. Repeat.",
+    images: ["/og.png"],
   },
   icons: {
     icon: [
@@ -43,6 +49,14 @@ export const metadata: Metadata = {
     apple: "/apple-touch-icon.png",
     shortcut: "/favicon.ico",
   },
+}
+
+export const viewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+    { media: "(prefers-color-scheme: dark)", color: "#0C0C0C" },
+  ],
+  colorScheme: "light dark",
 }
 
 export default function RootLayout({
