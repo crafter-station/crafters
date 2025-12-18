@@ -21,7 +21,7 @@ const hedvigSerif = Hedvig_Letters_Serif({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://crafters.crafter.station"),
+  metadataBase: new URL("https://learn.crafter.station"),
   title: "Crafters by Crafter Station | Learn by Shipping",
   description:
     "A free, community-driven program to help people build real products with modern web and AI. Build skills. Ship projects. Create opportunity.",
