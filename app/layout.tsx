@@ -21,26 +21,36 @@ const hedvigSerif = Hedvig_Letters_Serif({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://crafters.crafter.station"),
   title: "Crafters by Crafter Station | Learn by Shipping",
   description:
     "A free, community-driven program to help people build real products with modern web and AI. Build skills. Ship projects. Create opportunity.",
   generator: "v0.app",
-  icons: {
-    icon: [
+  openGraph: {
+    title: "Crafters by Crafter Station",
+    description: "Build something real. Ship it. Repeat.",
+    images: [
       {
-        url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
+        url: "/og.png",
+        width: 1200,
+        height: 630,
+        alt: "Crafters",
       },
     ],
-    apple: "/apple-icon.png",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Crafters by Crafter Station",
+    description: "Build something real. Ship it. Repeat.",
+    images: ["/og.png"],
+  },
+  icons: {
+    icon: [
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: "/apple-touch-icon.png",
+    shortcut: "/favicon.ico",
   },
 }
 
