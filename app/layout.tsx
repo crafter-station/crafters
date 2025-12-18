@@ -25,24 +25,15 @@ export const metadata: Metadata = {
   title: "Crafters by Crafter Station | Learn by Shipping",
   description:
     "A free, community-driven program to help people build real products with modern web and AI. Build skills. Ship projects. Create opportunity.",
-  generator: "v0.app",
   openGraph: {
     title: "Crafters by Crafter Station",
     description: "Build something real. Ship it. Repeat.",
-    images: [
-      {
-        url: "/og.png",
-        width: 1200,
-        height: 630,
-        alt: "Crafters",
-      },
-    ],
+    type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Crafters by Crafter Station",
     description: "Build something real. Ship it. Repeat.",
-    images: ["/og.png"],
   },
   icons: {
     icon: [
