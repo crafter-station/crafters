@@ -9,7 +9,8 @@
     "lint": "eslint .",
     "generate:og": "bun run scripts/generate-og.ts",
     "generate:favicons": "bun run scripts/generate-favicons.ts",
-    "generate:icon": "bun run scripts/generate-icon.ts"
+    "generate:icon": "bun run scripts/generate-icon.ts",
+    "generate:promo": "bun run scripts/generate-promo.ts"
   },
   "dependencies": {
     "@ai-sdk/openai": "^2.0.88",
